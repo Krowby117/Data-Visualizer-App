@@ -1,8 +1,10 @@
 import streamlit as st
 
 def show_cleaning(numeric_data, data):
-    na_strategy = st.selectbox(
-        "Missing value strategy",
+    # data entry errors
+    
+    # how to handle missing values
+    na_strategy = st.selectbox( "Missing value strategy",
         ["Do nothing", "Drop rows", "Fill numeric with mean", "Fill numeric with median"]
     )
 
@@ -17,4 +19,6 @@ def show_cleaning(numeric_data, data):
         for col in numeric_data:
             data[col] = data[col].fillna(data[col].median())
 
+    # how to handle duplicates
 
+    # outlier detection????

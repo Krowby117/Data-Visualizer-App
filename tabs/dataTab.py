@@ -16,5 +16,5 @@ def show_data(data):
     st.write("Column types")
     st.write(data.dtypes)
 
-    #st.markdown("<h2 style='text-align: center;'>CSV General Information</h2>", unsafe_allow_html=True)
-    #st.write(data.describe(include='all'))
+    st.markdown("<h2 style='text-align: center;'>CSV General Information</h2>", unsafe_allow_html=True)
+    st.write(data.describe(include='all'))

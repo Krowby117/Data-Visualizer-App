@@ -41,6 +41,7 @@ def show_dist(numeric_data, nonNumeric_data, data):
             st.plotly_chart(fig, width='content')
 
         # ------ pie chart ------
+        # make this cleaner, especially for larger amounts of items
         st.markdown("<h2 style='text-align: center;'>Pie Chart</h2>", unsafe_allow_html=True)
         pieL, pieR = st.columns([0.5, 0.5])
         pVal = pieR.selectbox (

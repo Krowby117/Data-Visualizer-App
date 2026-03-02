@@ -14,6 +14,7 @@ def show_rela(numeric_data, nonNumeric_data, data):
         st.plotly_chart(fig)
 
         # ------ scatter plot ------
+        # probably needs a re-work but this largely dependent on how the data cleaning is handled
         st.markdown("<h2 style='text-align: center;'>Scatter Plot</h2>", unsafe_allow_html=True)
         scatterL, scatterR = st.columns([0.5, 0.5])
         xs = scatterL.selectbox (
